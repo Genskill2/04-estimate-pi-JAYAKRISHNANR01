@@ -31,6 +31,6 @@ float wallis_pi(int n)
   for(i=1;i<n+1;i++)
   {
     product+(product*4*i*i)/(4*i*i-1)
-    }
-    return product;
+  }
+        return product;
 }    
