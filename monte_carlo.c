@@ -41,14 +41,17 @@ int main(void) {
   }
 }
 float mc_pi(int n)
-{
-float product;
-product=2.0;
-int i,j;
-for(i=1;i<n+1;i++)
-{
-product=(product*4*i*i)/(4*i*i-1);
+{float pi,x,y,z;
+ int count=0;
+ for(int i=0;i<n;++i){
+ 
+  x=frandom();
+   
+ y=frandom();
+   
+ z=x*x+y*y;
+   if(z<=1)count++
+   }
+ pi=(double)count/n*4;
+ return pi;
 }
-return product;
-}
-
