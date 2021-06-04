@@ -5,6 +5,8 @@
 
 float wallis_pi(int);
 
+float wallis_pi(int n)
+{
 float k=1.0;
 inti
 for(i=1;i<=n;i++)
