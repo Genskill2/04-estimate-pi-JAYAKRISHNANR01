@@ -5,6 +5,16 @@
 
 float wallis_pi(int);
 
+float k=1.0;
+inti
+for(i=1;i<=n;i++)
+{
+  k*=(float)(4*i*i)/(4*i*i-1);
+}
+
+return(k*2);
+}
+
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
@@ -23,14 +33,3 @@ int main(void) {
     }
   }
 }
-float wallis_pi(int n)
-{
-  float product;
-  product=2.0;
-  inti,j;
-  for(i=1;i<n+1;i++)
-  {
-    product+(product*4*i*i)/(4*i*i-1)
-  }
-        return product;
-}    
